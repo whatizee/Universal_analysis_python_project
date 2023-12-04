@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            background-color: #3a0a9c;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Times New Roman", serif; /* Change the font family */
+            font-size: 48px; /* Change the font size to 48 pixels */
+            color: #ff7300; /* Keep the color as specified */
+        }
+        h2 {
+            color: #3498db;
+        }
+        p {
+            color: #a19c9c;
+        }
+
+        .container {
+            margin: 50px;
+
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: #0e0c0c;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2574a9;
+        }
+        .about {
+            text-align: right;
+            position: absolute;
+            top: 20px; /* Adjust the distance from the bottom */
+            right: 20px; /* Adjust the distance from the right */
+            max-width: 400px;
+        }
+        .Data_desc {
+            text-align: right;
+            position: absolute;
+            top: 20px; /* Adjust the distance from the bottom */
+            right: 100px; /* Adjust the distance from the right */
+            max-width: 400px;
+        }
+        .Data_top_10_insurance {
+            text-align: right;
+            position: absolute;
+            top: 140px; /* Adjust the distance from the bottom */
+            right: 1000px; /* Adjust the distance from the right */
+            max-width: 400px;
+        }      
+    
+        .Data_top_10_Football_club {
+            text-align: right;
+            position: absolute;
+            top: 140px; /* Adjust the distance from the bottom */
+            right: 400px; /* Adjust the distance from the right */
+            max-width: 400px;
+        }   
+        .members {
+            text-align: left;
+            position: absolute;
+            bottom: 20px; /* Adjust the distance from the bottom */
+            right: 20px; /* Adjust the distance from the right */
+            max-width: 400px;
+        }
+
+        .members h2 {
+            color: #9b2d2d;
+        }
+
+        .members ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #a19c9c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Group 7</h1>
+        <button class="btn" onclick="redirectToPopulation()">Get Population Details</button>
+    </div>
+    <div class="members">
+        <h2>Group Members</h2>
+        <ul>
+            <li>Angel Berly</li>
+            <li>Jibin Sebastian</li>
+            <li>Raihana Shabeer</li>
+        </ul>
+    </div>
+    <div class="about">
+        <button class="btn" onclick="redirectToabout()">About</button>
+    </div>
+    <div class="Data_desc">
+        <button class="btn" onclick="redirectTodata_desc()">Data Description</button>
+    </div>
+    <div class="Data_top_10_insurance">
+        <button class="btn" onclick="redirectTop_ten_insurance_company()">Top Insurance Companies in Canada</button>
+    </div>
+    <div class="Data_top_10_Football_club">
+        <button class="btn" onclick="redirectTop_ten_football_clubs()">Top 20 Safest Countries</button>
+    </div>
+    <script>
+        function redirectToPopulation() {
+            window.location.href = '/get_population';
+        }
+        function redirectToabout(){
+            window.location.href='/about'
+        }
+        function redirectTodata_desc(){
+            window.location.href='/data_description'
+        }
+        function redirectTop_ten_insurance_company(){
+            window.location.href='/Top_ten_insurance_company'
+        }        
+        function redirectTop_ten_football_clubs(){
+            window.location.href='/Top_20_peace_index'
+        }     
+    </script>
+</body>
+</html>
