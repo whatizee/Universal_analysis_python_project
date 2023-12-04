@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            background-color: #3a0a9c;
+            text-align: center;
+            color: #555; /* Suitable text color */
+            font-family: "Times New Roman", serif;
+        }
+        .btn {
+            background-color: #3498db;
+            color: #0e0c0c;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+
+        h1 {
+            font-size: 48px;
+            color: #ff7300; /* Heading color */
+        }
+
+        section {
+            margin: 20px;
+            color: #e9e8e8;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #e9e8e8;
+            padding: 0;
+        }
+        .btn:hover {
+            background-color: #2574a9;
+        }
+        .back {
+            text-align: right;
+            position: absolute;
+            top: 20px; /* Adjust the distance from the bottom */
+            right: 20px; /* Adjust the distance from the right */
+            max-width: 400px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #e9e8e8;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #f2ebeb; /* Lighter text color for the footer */
+        }
+
+        p {
+            color: #f5eaea; /* Lighter text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <button class="btn" onclick="redirectTohome()">Back</button>
+    </div>
+    <header>
+        <h1>About the Project</h1>
+    </header>
+
+    <section>
+        <h2>Project Overview</h2>
+        <p>This project aims to provide information about world population, the safest countries, and insurance companies in Canada through web scraping and data presentation.</p>
+    </section>
+
+    <section>
+        <h2>Data Sources</h2>
+        <p>The project collects data from the following sources:</p>
+        <ul>
+            <li><strong>Wikipedia:</strong> For world population and insurance company information.</li>
+            <li><strong>World Population Review:</strong> For the list of safest countries.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technologies Used</h2>
+        <p>This project utilizes the following technologies:</p>
+        <ul>
+            <li><strong>Flask:</strong> A web framework used for creating the website and handling user requests.</li>
+            <li><strong>SQLite:</strong> A lightweight and serverless relational database used to store the scraped data in three different tables.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>If you have any questions or would like more information, feel free to contact us at W0829897@myscc.ca ,ab434@myscc.ca or rs724@myscc.ca</p>
+    </section>
+
+    <footer>
+        <p>We are storing the scraped data into a universal database, and in three different tables.</p>
+        <p>We are using Flask module to create the website.</p>
+        <!-- Add footer content if needed -->
+    </footer>
+    <script>
+        function redirectTohome(){
+            window.location.href='/'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Safest Countries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #3a0a9c, #dcb7d4); /* Single light purple gradient background */
+            color: #020202;
+        }
+
+        h1 {
+            font-family: "Times New Roman", serif; /* Change the font family */
+            font-size: 48px; /* Change the font size to 48 pixels */
+            color: #ff7300; /* Keep the color as specified */
+        }
+
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #d9edf7;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .find-input {
+            padding: 5px;
+        }
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .back {
+            text-align: right;
+            position: absolute;
+            top: 20px; /* Adjust the distance from the bottom */
+            right: 20px; /* Adjust the distance from the right */
+            max-width: 400px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Top 20 Safest Countries in the world</h1>
+    <div class="back">
+        <button class="btn" onclick="redirectTohome()">Back</button>
+    </div>
+    <table border="1">
+        <tr>
+            <th>Country</th>
+            <th>Global peace index 2023</th>
+            <th>Global peace index 2022</th>
+        </tr>
+        {% for row in peace_index %}
+        <tr>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <script>
+        function redirectTohome(){
+            window.location.href='/'
+        }
+    </script>
+</body>
+</html>

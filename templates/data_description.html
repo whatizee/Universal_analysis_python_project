@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Description</title>
+    <style>
+        body {
+            background-color: #3a0a9c;
+            text-align: center;
+            color: #555; /* Suitable text color */
+            font-family: "Times New Roman", serif;
+        }
+        .btn {
+            background-color: #3498db;
+            color: #0e0c0c;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2574a9;
+        }
+        .back {
+            text-align: right;
+            position: absolute;
+            top: 20px; /* Adjust the distance from the bottom */
+            right: 20px; /* Adjust the distance from the right */
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ff7300; /* Heading color */
+        }
+
+        section {
+            margin: 20px;
+            color: #e9e8e8;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #e9e8e8;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #e9e8e8;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #e9e8e8; /* Lighter text color for the footer */
+        }
+
+        p {
+            color: #efecec; /* Lighter text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <button class="btn" onclick="redirectTohome()">Back</button>
+    </div>
+    <header>
+        <h1>Data Description</h1>
+    </header>
+
+    <section>
+        
+        
+        <h2>World Population Data</h2>
+        <p>We have scraped world population data from Wikipedia. Here are the details:</p>
+        <ul>
+            <li><strong>Country:</strong> The name of the country.</li>
+            <li><strong>Population:</strong> The total population of the country.</li>
+            <li><strong>% of World:</strong> The percentage of the world population represented by the country.</li>
+            <li><strong>Date:</strong> The date when the population data was last updated.</li>
+            <li><strong>Source:</strong> The source of the population data.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Top 20 Safest Countries</h2>
+        <p>We have gathered information on the top 20 safest countries using the Global Peace Index:</p>
+        <ul>
+            <li><strong>Country Name:</strong> The name of the country.</li>
+            <li><strong>Global Peace Index:</strong> A measure of the relative peacefulness of a country.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Top 10 Insurance Companies in Canada</h2>
+        <p>We have compiled a list of the top 10 insurance companies in Canada:</p>
+        <ul>
+            <li><strong>Company:</strong> The name of the insurance company.</li>
+            <li><strong>Merged Into:</strong> Information about any mergers involving the company.</li>
+            <li><strong>Year:</strong> The year when the merger or other significant event occurred.</li>
+            <li><strong>Note:</strong> Additional notes or details about the company.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>We are using Flask module to create the website.</p>
+        <p>We are storing the scraped data into a universal database, and in three different tables.</p>
+        <!-- Add footer content if needed -->
+    </footer>
+    <script>
+        function redirectTohome(){
+            window.location.href='/'
+        }
+    </script>
+</body>
+</html>
